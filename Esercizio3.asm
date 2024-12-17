@@ -1,5 +1,5 @@
 ; multi-segment executable file template.
-; Esercizio 2 Somma di 10+20 salvati in 2 variabili Num1 e Num2 e risultato salvato nella variabile Ris
+; Esercizio 3 Somma di 10+20+30 salvati in 3 variabili Num1 e Num2 e Num3 e risultato salvato nella variabile Ris
 data segment
     ; add your data here!
     Num1 DW 10h
@@ -15,16 +15,14 @@ ends
 
 code segment
 start:
-MOV AX,data
-MOV DS,AX
-MOV AX,Num1    
-MOV BX,Num2  
-ADD AX,BX
-MOV CX,Num3
-ADD AX,CX
-MOV Ris,AX
-
-
-ends
-
-end start ; set entry point and stop the assembler.
+    MOV AX,data
+    MOV DS,AX
+    MOV AX,Num1
+    MOV BX,Num2
+    ADD AX,BX
+    MOV CX,Num3
+    ADD AX,CX
+    MOV Ris,AX
+ends                                                       
+                                                          
+end start ; set entry point and stop the assembler.      
