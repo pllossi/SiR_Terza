@@ -17,7 +17,8 @@ start:
 MOV AX,data
 MOV DS,AX
 MOV AX,Num1    
-MOV BX,Num2
+MOV BX,Num2  
+ADD AX,BX
 
 
 ends
