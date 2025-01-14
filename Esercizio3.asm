@@ -25,4 +25,5 @@ start:
     MOV Ris,AX
 ends                                                       
                                                           
-end start ; set entry point and stop the assembler.      
+end start 
+; set entry point and stop the assembler.      
