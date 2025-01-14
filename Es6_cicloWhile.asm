@@ -28,8 +28,7 @@ start:
     je fine
     add ax,Num1
     dec bx
-    cmp bx,0h
-    jne inizioCiclo
+    jmp inizioCiclo
     fine:
     mov ris,ax    
     ; wait for any key....    
