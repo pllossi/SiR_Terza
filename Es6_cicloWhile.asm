@@ -1,8 +1,10 @@
-; programma che ci permette di aggiungere un numero determinate volte
+; Sviluppare un programma in assembly, in cui vengono definiti due numeri a 16 bit, Num1 e Num2.
+; Il programma dovrà sommare Num1 con se stesso, tante volte quanto vale la variabile Num2. 
+; Il risultato andrà salvato nella variabile Ris sempre a 16 bit.
 
 data segment
     ; add your data here!
-    Num1 DW 10h
+    Num1 DW  1h
     Num2 DW 10h
     ris  DW  0h
     pkey db "press any key...$"
@@ -39,4 +41,4 @@ start:
     int 21h    
 ends
 
-end start ; set entry point and stop the assembler.
+end start ; set entry point and stop the assemble
