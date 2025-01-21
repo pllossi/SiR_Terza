@@ -1,10 +1,10 @@
 ; multi-segment executable file template.
 
 data segment
-    Num1 DW 100h
-    Num2 DW  20h
-    Ris  DW   0h
-    Op   DB   4
+    Num1 DB 10h
+    Num2 DB 05h
+    Ris  DW  0h
+    Op   DB  1
     pkey db "press any key...$"
 ends
 
@@ -17,8 +17,8 @@ start:
 ; set segment registers:
     mov ax, data
     mov ds,ax
-    mov ax,Num1
-    mov bx,Num2
+    mov ah,Num1
+    mov bh,Num2
 
     ; add your code here
    
@@ -32,10 +32,14 @@ start:
     je divs
     
 sum:
-    add ax,bx
+    add ah,bh
+    mov al,ah
+    mov ah,00h
     jmp salva
 sot:
-    sub ax,bx
+    sub ah,bh 
+    mov al,ah
+    mov ah,00h
     jmp salva
 mol:
     mul bx
