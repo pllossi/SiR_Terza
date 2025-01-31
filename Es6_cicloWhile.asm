@@ -3,7 +3,7 @@
 data segment
     ; add your data here!
     Num1 DW 10h
-    Num2 DW 10h
+    Num2 DW 1000h
     ris  DW  0h
     pkey db "press any key...$"
 ends
