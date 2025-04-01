@@ -1,3 +1,1 @@
-Assembly di terza
-
-Upload di esercizi una volta finiti
+Esercizi di assembly e bash svolti in laboratorio e a casa
